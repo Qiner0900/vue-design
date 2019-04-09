@@ -55,13 +55,13 @@
 ### 从 Vue 的构建配置了解其不同的构建输出
 
 如果按照输出的模块形式分类，那么 Vue 有三种不同的构建输出，分别是：`UMD`、`CommonJS` 以及 `ES Module`，我们可以在 Vue 的 Rollup 构建配置中得知，打开 `scripts/config.js` 文件，如下图：
-
+//http://ovjvjtt4l.bkt.clouddn.com 此域名不存在，无图片
 ![](http://ovjvjtt4l.bkt.clouddn.com/2017-08-31-vue-build-config1.png)
 
 上图中的三个构建配置的入口是相同的，即 `web/entry-runtime.js` 文件，但是输出的格式(`format`)是不同的，分别是 `cjs`、`es` 以及 `umd`。
 
 每种模块形式又分别输出了 `运行时版` 以及 `完整版`，如下图：
-
+//http://ovjvjtt4l.bkt.clouddn.com 此域名不存在，无图片
 ![](http://ovjvjtt4l.bkt.clouddn.com/2017-08-31-130242.jpg)
 
 上图中，`cjs` 模块分别输出了 `运行时版` 以及 `完整版` 两个版本，`es` 模块也做了同样的事情，我们观察运行时版本与完整版本的区别：
@@ -73,7 +73,7 @@
 通过名字，我们就可以猜到，完整版比运行时版本多了一个传说中的 `compiler`，而 `compiler` 在我们介绍目录结构的时候说过，它的作用是：*编译器代码的存放目录，将 template 编译为 render 函数*。
 
 上图中只介绍了 `cjs` 与 `es` 版本的输出，对于 `umd` 模块格式的输出，同样也分为 `运行时版` 与 `完整版`，并且还分为 `生产环境` 与 `开发环境`，如下图：
-
+//http://ovjvjtt4l.bkt.clouddn.com 此域名不存在，无图片
 ![](http://ovjvjtt4l.bkt.clouddn.com/2017-08-31-131849.jpg)
 
 ### 不同构建输出的区别与作用
